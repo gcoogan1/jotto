@@ -1,7 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-
 import Congrats from "./Congrats";
 import { findByTestAttr, checkProps } from "../../Test/testUtils";
 
@@ -28,7 +27,7 @@ test("renders no text when `sucsess` prop is false", () => {
 
 test("renders congrats message when `success` prop is true", () => {
   const wrapper = setup({ success: true });
-  const message = findByTestAttr(wrapper, "congrats-message");
+  const message = findByTestAttr(wrapper, "congrats-message"); 
   expect(message.text().length).not.toBe(0);
 });
 

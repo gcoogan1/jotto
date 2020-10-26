@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 function Congrats(props) {
   if (props.success) {
-    return <div data-test="congrats-component">
+    return <div data-test="congrats-component" className="alert alert-success">
         <span data-test="congrats-message">
             Congrats! You guessed the word!!
         </span>

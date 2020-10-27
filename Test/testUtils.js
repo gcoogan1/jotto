@@ -1,9 +1,9 @@
 import checkPropTypes from "check-prop-types";
-import rootReducer from "../src/store/reducers/index";
-import { createStore } from "../../../Library/Caches/typescript/3.3/node_modules/redux";
+import rootReducer from "../src/store/reducers";
+import { createStore } from "redux"; //IMPORTANT
 
-export const storeFactory = initialState => {
-  createStore(rootReducer, initialState);
+export const storeFactory = (initialState) => {
+  return createStore(rootReducer, initialState);
 };
 
 export const findByTestAttr = (wrapper, val) => {

@@ -37,7 +37,7 @@ describe("render", () => {
   });
 
   describe("word has been guessed", () => {
-    let wrapper;
+    let wrapper; 
     beforeEach(() => {
       const initialState = { success: true };
       wrapper = setup(initialState);
